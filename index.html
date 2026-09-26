@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08080d">
+  <meta name="description" content="Tamilcrafters Anime Video Search">
+  <title>Tamilcrafters Anime Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Tamilcrafters Home">
+      <span class="brand-mark">TC</span>
+      <span>
+        <strong>Tamilcrafters</strong>
+        <small>Anime Search</small>
+      </span>
+    </a>
+
+    <button class="theme-btn bubble-btn" id="themeBtn" type="button" aria-label="Toggle theme">☀️</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="badge">✦ PREMIUM ANIME SEARCH</div>
+      <h1>Find your <span>Anime</span><br>across the web.</h1>
+      <p>Search an anime, character, or keyword and open related results on YouTube, Instagram and Facebook.</p>
+
+      <form class="search-box" id="searchForm">
+        <span class="search-icon">⌕</span>
+        <input id="searchInput" type="search" placeholder="Search anime name..." autocomplete="off">
+        <button class="search-btn bubble-btn" type="submit">Search</button>
+      </form>
+
+      <div class="quick-searches">
+        <span>Popular:</span>
+        <button type="button" data-search="Naruto">Naruto</button>
+        <button type="button" data-search="One Piece">One Piece</button>
+        <button type="button" data-search="Demon Slayer">Demon Slayer</button>
+        <button type="button" data-search="Solo Leveling">Solo Leveling</button>
+      </div>
+    </section>
+
+    <section class="results-section" id="resultsSection" aria-live="polite">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">SEARCH RESULTS</span>
+          <h2 id="resultTitle">Explore platforms</h2>
+        </div>
+        <span class="result-count" id="resultCount">3 platforms</span>
+      </div>
+
+      <div class="platform-grid">
+        <article class="platform-card youtube">
+          <div class="platform-icon">▶</div>
+          <div class="platform-copy">
+            <span class="platform-name">YouTube</span>
+            <h3 id="youtubeTitle">Search anime videos</h3>
+            <p>Find videos, edits, AMVs, shorts and more.</p>
+          </div>
+          <a id="youtubeLink" class="open-btn bubble-btn" href="https://www.youtube.com/results?search_query=anime" target="_blank" rel="noopener noreferrer">Open ↗</a>
+        </article>
+
+        <article class="platform-card instagram">
+          <div class="platform-icon">◎</div>
+          <div class="platform-copy">
+            <span class="platform-name">Instagram</span>
+            <h3 id="instagramTitle">Search anime content</h3>
+            <p>Open Instagram search for related posts and reels.</p>
+          </div>
+          <a id="instagramLink" class="open-btn bubble-btn" href="https://www.instagram.com/explore/search/keyword/?q=anime" target="_blank" rel="noopener noreferrer">Open ↗</a>
+        </article>
+
+        <article class="platform-card facebook">
+          <div class="platform-icon">f</div>
+          <div class="platform-copy">
+            <span class="platform-name">Facebook</span>
+            <h3 id="facebookTitle">Search anime posts</h3>
+            <p>Find public videos, posts and pages related to your search.</p>
+          </div>
+          <a id="facebookLink" class="open-btn bubble-btn" href="https://www.facebook.com/search/top?q=anime" target="_blank" rel="noopener noreferrer">Open ↗</a>
+        </article>
+      </div>
+
+      <div class="notice">
+        <span>ⓘ</span>
+        <p>This website does not scrape or collect platform content. Buttons open each platform's own search page, so no API key is required.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <span class="brand-mark small">TC</span>
+      <div><strong>Tamilcrafters</strong><span>Anime Search</span></div>
+    </div>
+    <p>Created by <strong>Tamilcrafters</strong> · Built for anime fans.</p>
+    <p class="copyright">© <span id="year"></span> Tamilcrafters. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
